@@ -7,7 +7,7 @@ module Sunspot
     class SolrconfigUpdater
       include TaskHelper
 
-      CONFIG_FILES = %w(solrconfig.xml elevate.xml spellings.txt stopwords.txt synonyms.txt) 
+      CONFIG_FILES = %w(solrconfig.xml elevate.xml spellings.txt stopwords.txt synonyms.txt stopwords.es.txt) 
 
       class <<self
         def execute(solrconfig_path, options = {})
