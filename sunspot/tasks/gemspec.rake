@@ -1,10 +1,10 @@
 require File.join(File.dirname(__FILE__), '..', '..', 'tools', 'gem_tasks')
 
 Sunspot::GemTasks.new(:build => :copy_rdoc) do |s|
-  s.name = 'sunspot'
+  s.name = 'nuatt_sunspot'
   s.version = Sunspot::VERSION
   s.executables = ['sunspot-solr', 'sunspot-installer']
-  s.email = 'mat@patch.com'
+  s.email = 'sistemas@nuatt.es'
   s.homepage = 'http://outoftime.github.com/sunspot'
   s.summary = 'Library for expressive, powerful interaction with the Solr search engine'
   s.description = <<TEXT

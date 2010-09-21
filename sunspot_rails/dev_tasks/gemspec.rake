@@ -3,10 +3,10 @@ require File.join(File.dirname(__FILE__), '..', '..', 'tools', 'gem_tasks')
 Sunspot::GemTasks.new do |s|
   require File.join(File.dirname(__FILE__), '..', 'lib', 'sunspot', 'rails', 'version')
 
-  s.name = 'sunspot_rails'
+  s.name = 'nuatt_sunspot_rails'
   s.version = Sunspot::Rails::VERSION
   s.summary = 'Rails integration for the Sunspot Solr search library'
-  s.email = 'mat@patch.com'
+  s.email = 'sistemas@nuatt.es'
   s.homepage = 'http://github.com/outoftime/sunspot_rails'
   s.description = <<TEXT
 Sunspot::Rails is an extension to the Sunspot library for Solr search.
@@ -27,7 +27,7 @@ TEXT
     'spec/*.rb',
     'spec/mock_app/{app,lib,db,vendor,config}/**/*',
     'spec/mock_app/{tmp,log,solr}']
-  s.add_dependency 'sunspot', Sunspot::Rails::VERSION
+  s.add_dependency 'nuatt_sunspot', Sunspot::Rails::VERSION
   s.add_development_dependency 'rspec', '~> 1.2'
   s.add_development_dependency 'rspec-rails', '~> 1.2'
 end
