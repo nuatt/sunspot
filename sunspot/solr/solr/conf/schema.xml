@@ -64,6 +64,8 @@
         <tokenizer class="solr.StandardTokenizerFactory"/>
         <filter class="solr.StandardFilterFactory"/>
         <filter class="solr.LowerCaseFilterFactory"/>
+		<filter class="solr.StopFilterFactory" words="stopwords.es.txt" ignoreCase="true"/>
+        <filter class="solr.ISOLatin1AccentFilterFactory"/>
       </analyzer>
     </fieldType>
     <!-- *** This fieldType is used by Sunspot! *** -->
